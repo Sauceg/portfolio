@@ -1,0 +1,65 @@
+body{
+    background-image:url("base-image\ copy-min.jpeg");
+    background-color: black;
+    background-size: 100%;
+    background-size:cover;
+    color:white; 
+    margin: 0;
+}
+header{
+    display: flex;
+    font-size: larger;
+    justify-content: space-around; 
+    align-items: center;
+    background: rgb(68,65,152);
+    background: linear-gradient(90deg, rgba(68,65,152,1) 0%, rgba(57,55,128,1) 12%, rgba(60,54,116,1) 48%, rgba(42,49,95,1) 78%, rgba(26,32,75,1) 96%);
+    position:sticky;
+    top:0;
+    height:8vh;
+}
+nav{
+    width:50%;
+    display: flex;
+    justify-content: space-around; 
+}
+header a{
+    text-decoration: none;
+    color: white;
+
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.profile-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:15%;
+}
+.profile-picture img{
+    width:90%;
+    height:90%;
+    border-radius: 50%;
+}
+figcaption{
+    text-align:center;
+    font-size: 25px;
+}
+.profile a{
+    color: white;
+    font-size: 20px;
+}
+.profile-details{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.profile a:hover{
+    font-size:140%;
+    -webkit-transition-duration: 0.25s ;
+}
