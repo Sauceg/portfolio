@@ -1,18 +1,18 @@
-body{
-    background-image:url("base-image\ copy-min.jpeg");
-    background-color: black;
-    background-size: 100%;
-    background-size:cover;
-    color:white; 
-    margin: 0;
-}
+
+:root {                     
+    --padding-base: 25px;
+    --padding-small: calc(var(--padding-base) / 2);
+    --padding-large: calc(var(--padding-base) * 2);
+
+    }
+
 header{
-    display: flex;
-    font-size: larger;
-    justify-content: space-around; 
-    align-items: center;
     background: rgb(68,65,152);
     background: linear-gradient(90deg, rgba(68,65,152,1) 0%, rgba(57,55,128,1) 12%, rgba(60,54,116,1) 48%, rgba(42,49,95,1) 78%, rgba(26,32,75,1) 96%);
+    display: flex;
+    font-size: medium; 
+    justify-content: center;
+    align-items: center;
     position:sticky;
     top:0;
     height:8vh;
@@ -22,12 +22,28 @@ nav{
     display: flex;
     justify-content: space-around; 
 }
+nav a:hover{
+    text-decoration: underline;
+}
 header a{
     text-decoration: none;
     color: white;
 
 }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: rgb(68,65,152);
+    background: linear-gradient(90deg, rgba(68,65,152,1) 0%, rgba(57,55,128,1) 12%, rgba(60,54,116,1) 48%, rgba(42,49,95,1) 78%, rgba(26,32,75,1) 96%);
+    color:white; 
+}
 .profile{
+    background-image:url("base-image\ copy-min.jpeg");
+    background-color: black;
+    background-size: 100%;
+    background-size:cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,17 +56,14 @@ header a{
     width:15%;
 }
 .profile-picture img{
-    width:90%;
-    height:90%;
+    width:95%;
+    height:95%;
     border-radius: 50%;
 }
 figcaption{
+    padding-top: 10px;
     text-align:center;
-    font-size: 25px;
-}
-.profile a{
-    color: white;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 .profile-details{
     display: flex;
@@ -59,7 +72,91 @@ figcaption{
     align-items: center;
 
 }
+.profile a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 .profile a:hover{
-    font-size:140%;
+    text-decoration: underline;
     -webkit-transition-duration: 0.25s ;
+}
+
+h2{
+    text-align: center;
+    background: rgb(68,65,152);
+    background: linear-gradient(90deg, rgba(68, 65, 152, 1) 0%, rgba(68, 65, 152, 0.8) 20%, rgba(240, 255, 255, 1) 50%, rgba(68, 65, 152, 0.8) 80%, rgba(68, 65, 152, 1) 100%);
+    color:#444198 ;
+    top: 8vh;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.container{
+    max-width: 900px;
+    margin: 0;
+    padding: 65px;
+
+
+}
+.container h3 {
+    font-size: 1.75em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .container h4 {
+    font-size: 1.25em;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .container p {
+    font-size: 1.15em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+  }
+
+.projects{
+    display:grid;
+    grid-template-columns: 2fr 2fr; 
+    margin: 65px ;
+}
+.display{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(100px,200px);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.display video{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5), /* Bottom shadow */
+    0 -4px 10px rgba(255, 255, 255, 0.5); /* Top shadow */}
+
+.all{
+    display: grid;
+    grid-template-columns: 0.8fr 3.3fr;
+}
+.nav body{
+    border: 1px solid white;
+}
+aside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 8vh; 
+    width: 95%;
+    height: 100vh; 
+    background: linear-gradient(90deg, rgba(68,65,152,1) 0%, rgba(57,55,128,1) 12%, rgba(60,54,116,1) 48%, rgba(42,49,95,1) 78%,);
+    padding: 10px;
+     /* Space between aside and main content */
+}
+aside a{
+    color: aliceblue;
 }

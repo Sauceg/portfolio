@@ -6,46 +6,166 @@
     <link rel="stylesheet" href="style.css">
     <title>Marvin</title>
 </head>
+<header>
+    <nav>
+    <a href="#About me">About me</a> 
+    <a href="#Projects">Projects</a> 
+    <a href="#Experiences">Experiences</a> 
+    <a href="#Links">Links</a> 
+    </nav>
+</header>
 <body>
-    <header>
-        <nav>
-        <a href="#Bio">About me</a> 
-        <a href="">Projects</a> 
-        <a href="">Experiences </a> 
-         </nav>
-    </header>
+   
+    <div class = "all">
+        <aside>
+
+            Top course choices
+            <ul>
+              <li><a href="#">Genetic engineering</a></li>
+              <li><a href="#">Genetic mutation</a></li>
+              <li><a href="#">Organic Chemistry</a></li>
+              <li><a href="#">Pharmaceuticals</a></li>
+              <li><a href="#">Biochemistry with behaviour</a></li>
+              <li><a href="#">Pure biochemistry</a></li>
+              <li><a href="#">Data mining</a></li>
+              <li><a href="#">Computer security</a></li>
+              <li><a href="#">Bioinformatics</a></li>
+              <li><a href="#">Cybernetics</a></li>
+            </ul>
+          </aside>
+    <div class = "article"> 
+    
     <div class="profile">
         <figure class="profile-picture"> 
             <img src="pp.jpeg" alt="Photo of Marvin Uwalaka">
             <figcaption>Marvin Uwalaka</figcaption>
         </figure>
-        <div class="profile-details">
-            <a href="">Software Developer</a> <a href="">Web Developer</a> <a href="">Game Developer</a> <a href="">Art Curator</a>
-        </div>
+        <!-- <div class="profile-details">
+            <a href="">Software Dev.</a> <a href="">Web Dev.</a> <a href="">Game Dev.</a> <a href="">Art Curator</a>
+        </div>-->
     </div>
-    <div id = "Bio">
-        <h2>About Me </h2>
-        <p>Hello I'm Marvin, a 3rd year Computer Science Major and Business Minor at the University of Alberta.</p>
-    </div>
-    <div class = projects-container>
-        <h2>Projects</h2>
-        <div class = "bounce">
-            <h3>Bounce
-                <span>
-                <ul>
-                    <li>testing</li>
-                    <li>bruv</li>
-                </ul>
-                </span>
-            </h3>
-           
-        </div>
-            <h3></h3>
-        </div>
-    </div>
-    <div>
-        <h3>Experiences</h3>
-    </div>
+    <section id = "About me"> </section>
+        <h2>About me</h2>
+                <div class = "container About">
+                    <h3>Education</h3>
+                        <p>Marvin Uwalaka is currently pursuing a Bachelor of Science in Computer Science at the University of Alberta, maintaining a CGPA of 3.5 while gaining expertise in data structures, formal systems, and practical programming methodology.</p> 
+                    <h3>Awards & Recognition</h3> 
+                        <h4>Black Youth Leadership Program Award, Center For the Advancement of African Canadians.</h4>
 
+                            <p>The Black Youth Leadership Program is an empowering initiative designed to uplift and
+                                engage Black youth in community and civic activities. Through structured activities and
+                                mentorships, participants are encouraged to lead and deliver community-based initiatives,
+                                contributing to their personal development and the collective well-being of their communities
+                            </p>
+
+                        <h4>Certificate of Recognition, Canadian Service Corps 2024 </h4>
+
+                            <p>Presented in recognition of my valuable contribution towards improving Canadian
+                             Communities.</p>
+
+                        <h4>Dean’s Honor Roll — First-Class Standing Student</h4>
+                            <p>This is awarded to high-achieving students who achieve a grade point average of 3.5 or higher
+                                while enrolled in 24 or more units of course weight in a given academic year.
+                            </p>
+
+                        <h4> UABSA Events Co-ordinator</h4>
+                            <p>University of Alberta Black Student Asssociation Events Co-ordinator.</p>
+                </div>
+        <section id = "Projects"> </section>
+        <h2>Projects</h2>
+        <div class = "Conatainer  projects">
+            <div class="description">
+                <h3> Bounce Game</h3>
+                    <p>The player's goal is to move a ball across the screen to reach a token while avoiding a series of obstacles.</p>
+                    <ul>
+                        <li>Developed this application with Python and the Pygame library.</li>
+                        <li>Designed with an object oriented programming model.</li>
+                        <li>Utilized Class instances and methods to help keep track of game object interaction.</li>
+                        <li>Handled user input keyboard events and updated the game window accordingly.</li>
+                    </ul>
+
+                <h3>Wordle</h3>
+                    <p>This is a Python Shell implementation of the popular online game Wordle where a player has 6 chances to guess a
+                    mystery 5 letter word.</p>
+                <ul>
+                    <li>Performed Opening, reading, writing and closing files.</li>
+                    <li>Decrypted a corrupted file with a text of words used in the Wordle dictionary.</li>
+                    <li>Searching and sorting correct or incorrect letters used in guesses.</li>
+                    <li>Operates on python shell.</li>
+                </ul>
+
+                <h3>Memory</h3>
+                <p>A player flips two cards at a time from a grid of faced down shuffled cards and keeps them if the cards match.</p>
+                <ul>
+                    <li>Performed user input validation.</li>
+                    <li>Implemented the functionality to select the player with the most cards as the winner.</li>
+                </ul>
+            </div>
+            <div class="projects display">
+                <div class = "grid-item"> 
+                    <video controls
+                        autoplay
+                        loop
+                        muted
+                        preload="auto"
+                        poster="projects /Bounce.jpeg">
+                        <source src="projects /Bounce_tutorial-ezgif.com-resize-video.mp4" type="video/mp4" />
+                        <p>
+                            Your browser doesn't support this video. Here is a
+                            <a href="projects /Bounce_tutorial-ezgif.com-resize-video.mp4">link to the video</a> instead.
+                        </p>
+                    </video>
+                </div>
+                <div class = "grid-item"> 
+                    <video controls
+                        autoplay
+                        loop
+                        muted
+                        preload="auto">
+                        <source src="projects /radio_buttons-ezgif.com-resize-video.mp4" type="video/mp4" />
+                        <p>
+                            Your browser doesn't support this video. Here is a
+                            <a href="projects /radio_buttons-ezgif.com-resize-video.mp4">link to the video</a> instead.
+                        </p>
+                    </video>
+                <div>
+                    ccc
+                </div>
+                <div>
+                    ccc
+                </div>
+                </div>
+            </div>
+        </div>
+        <section id = "Experiences"> </section>
+            <h2>Experiences</h2>
+            <div class="container Exp">
+                <h3>The University of Alberta Programming Contest</h3>
+                    <p>The University of Alberta Programming Contest is an opportunity for university, college, and high school students in Alberta to show off their knowledge and skill in a programming competition.</p>
+                        <li>Collaborating with a team to determine the scope and expectations of programming problems.</li>
+                        <li>Employed strong verbal and written communication skills.</li>
+                        <li>Developing, troubleshooting, analyzing, and testing solutions.</li>
+                <h3>The University of Alberta Programming Contest</h3>
+                <p>The University of Alberta Programming Contest is an opportunity for university, college, and high school students in Alberta to show off their knowledge and skill in a programming competition.</p>
+                    <li>Collaborating with a team to determine the scope and expectations of programming problems.</li>
+                    <li>Employed strong verbal and written communication skills.</li>
+                    <li>Developing, troubleshooting, analyzing, and testing solutions.</li>
+             </div>
+
+
+        <section id = "Links"> </section>
+            <h2>Links</h2>
+            <div class="container links">
+            <h4>Black Youth Leadership Program Award, Center For the Advancement of African Canadians. 2023.</h4>
+                <p>The Black Youth Leadership Program is an empowering initiative designed to uplift and engage Black youth in community and civic activities. Through structured activities and mentorships, participants are encouraged to lead and deliver community-based initiatives, contributing to their personal development and the collective well-being of their communities.</p>
+            <h4>Certificate of Recognition, Canadian Service Corps 2024</h4>
+                <p>Presented in recognition of my valuable contribution towards improving Canadian Communities.</p>
+            <h4>Dean’s Honor Roll — First-Class Standing Student</h4>
+                <p>This is awarded to high-achieving students who achieve a grade point average of 3.5 or higher
+                while enrolled in 24 or more units of course weight in a given academic year.</p>
+        </div>
+    </div>
+</div>
+</div>
 </html>
 
